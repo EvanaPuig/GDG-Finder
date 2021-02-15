@@ -90,4 +90,7 @@ dependencies {
 
     // Client for retrieving location
     implementation "com.google.android.gms:play-services-location:$version_play_services"
+
+    // Required -- JUnit 4 framework
+    testImplementation "junit:junit:$junit"
 }
