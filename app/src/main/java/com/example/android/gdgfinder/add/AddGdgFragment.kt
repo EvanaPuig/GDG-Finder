@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.Observer
 
 import com.example.android.gdgfinder.R
 import com.example.android.gdgfinder.databinding.AddGdgFragmentBinding
@@ -35,6 +34,9 @@ class AddGdgFragment : Fragment() {
                     Snackbar.LENGTH_SHORT // How long to display the message.
                 ).show()
                 viewModel.doneShowingSnackbar()
+
+                binding.button.text = getString(R.string.done)
+                binding.button.contentDescription = getString(R.string.submitted)
             }
         })
 
